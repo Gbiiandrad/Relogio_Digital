@@ -1,0 +1,65 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto&display=swap');
+
+/*Selecionar Tds os elementos*/
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans' sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background:  radial-gradient(circle at 50% -20.71%, #e347c5 0, #ed3db6 7.14%,
+     #f535a6 14.29%, #fb2f97 21.43%, #ff2c87 28.57%, #ff2c77 35.71%, #ff3167 42.86%,
+      #ff3858 50%, #fb4049 57.14%, #f64a3a 64.29%, #f0532a 71.43%, #e85c18 78.57%,
+       #df6400 85.71%, #d56c00 92.86%, #ca7300 100%); /*tem mais de 1 cor*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex; /*ficar alinhado*/
+    align-items: center;
+    justify-content: space-around; /*para o espaçamento entre a Horas, Minutos e Segundos*/
+    height: 200px;
+    width: 550px;
+
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);   
+
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+
+    flex-direction: column; /*para ficar um de baixo do outro*/
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+
+}
+
+.relogio span {
+    font-weight: bolder; /*para engrossar a fonte*/
+    font-size: 60px;
+
+}
+
+/*para diminurir oq ta escrito ( Horas, minutos e segundos ) */
+.relogio span.tempo {
+    font-size: 10px;
+
+}
